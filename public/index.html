@@ -608,7 +608,7 @@
         </div>
       <!-- founder name -->
         <div class="section-title">
-         <h2 style="font-size:20px;padding-top: 37px;padding-bottom: 7px">Founder</h2>
+         <h2 style="font-size:20px;padding-top: 37px;padding-bottom: 7px">Founder/Lead</h2>
         </div>
         <div class="row">
           <div class="col-md-6 form-group">
@@ -621,7 +621,10 @@
             <input type="tel" class="form-control" pattern="[6-9]{1}[0-9]{9}" name="mobile" id="lmobile" placeholder="Your WhatsApp Number" required>
           </div>
           <div class="col-md-6 form-group mt-3 ">
-            <input type="college" class="form-control" name="college" id="lcollege" placeholder="Name of Institute" required>
+            <input type="text" class="form-control" name="college" id="lcollege" placeholder="Name of Institute" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 ">
+            <input type="number" class="form-control" name="teammembers" id="teamnum" placeholder="Number of Team members" required>
           </div>
           <!-- <div class="col-md-6 form-group mt-3">
             <input list="course-name" name="course-name" class="form-control" id="lcname" placeholder="Course" required>
@@ -667,7 +670,7 @@
  <!-- </datalist>
           </div> -->
 <!-- co-founder Name -->
-          <div class="section-title">
+          <!--<div class="section-title">
          
             <h2 style="font-size:20px;padding-top: 37px;padding-bottom: 7px">CO-Founder</h2>
           </div>
@@ -683,7 +686,7 @@
             </div>
             <div class="col-md-6 form-group mt-3 ">
               <input type="college" class="form-control" name="college" id="lcollege" placeholder="Name of Institute" required>
-            </div>
+            </div>-->
             <!-- <div class="col-md-6 form-group mt-3">
               <input list="course-name" name="course-name" class="form-control" id="lcname" placeholder="Course" required>
               <datalist id="course-name"> -->
@@ -990,9 +993,8 @@
          
               <h2 style="font-size:20px;padding-top: 37px;padding-bottom: 7px">About Idea</h2>
             </div>
-            <textarea name="comments" id="idea" style="width: 102%;height:90px;text-align: center;padding:10px;font-size: 20px;color:white;">Tell us about your Idea!!
+            <textarea name="comments" id="idea" style="width: 102%;height:90px;text-align: center;padding:10px;font-size: 20px;color:white;">
               </textarea>
-              <input type="submit" id="Submit1">
           </div><script>
            const submit1=document.getElementById("Submit1");
            submit1.addEventListener("click", function(event){
