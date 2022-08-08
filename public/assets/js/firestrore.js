@@ -88,3 +88,24 @@ form.addEventListener('submit', e => {
             showError()
         })
 })
+
+// extra
+const splBtn = document.querySelector('#special-register-button')
+const headerSection = document.querySelector('#header')
+const registerSection = document.querySelector('#services')
+const navLinks = document.querySelectorAll('#navbar ul li a')
+
+console.log({splBtn, headerSection, registerSection, navLinks})
+
+splBtn.addEventListener('click', e => {
+  console.log('clicked')
+  headerSection.classList.toggle('header-top', true)
+  registerSection.classList.toggle('section-show', true)
+  navLinks.forEach((link, idx) => {
+    if(idx === 3) {
+        link.classList.toggle('active', true)
+    } else {
+        link.classList.toggle('active', false)
+    }
+  })
+})
