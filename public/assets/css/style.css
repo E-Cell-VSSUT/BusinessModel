@@ -34,6 +34,15 @@ body::before {
   }
 }
 
+@media (max-width: 768px) {
+  body::before {
+    background: #1A1A1A url("../img/b-model.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
 
 a {
   color: #e94560;
@@ -60,6 +69,13 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   z-index: 997;
   overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 768px) {
+  #header {
+    background-color: transparent;
+  }
 }
 
 #header * {
@@ -749,7 +765,7 @@ border: 20px solid rgba( 255, 255, 255, 0.18 );
 
 .services .register-form {
   padding: 30px;
-  background-color: rgb(255 255 255 / 7%));
+  background-color: rgb(255 255 255 / 7%);
 }
 
 .services .register-form .error-message {
